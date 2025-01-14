@@ -1,29 +1,56 @@
+from random import randint
+winning=2
+#scores
+comp=0
+p=0
+#scores
 
-var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
+while p<winning and comp<winning: 
+	rand_num = randint(0,2)
+	print(f"computer score:{comp} player score:{p}\n")
+	player = input("Player, make your move: \n").lower()
+	if player=="quit" or player=="q":
+		break
+	if rand_num == 0:
+		computer = "rock"
 
-var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
+	elif rand_num == 1:
+		computer = "paper"
 
-var randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
+	else:
+		computer = "scissors"
 
-var image1 = document.querySelectorAll("img")[0];
+	print(f"Computer plays {computer} \n" )
 
-image1.setAttribute("src", randomImageSource);
+	if player == computer:
+		print("It's a tie!\n")
 
-
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-
-var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
-
-document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
-
-
-//If player 1 wins
-if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
-}
-else if (randomNumber2 > randomNumber1) {
-  document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
-}
-else {
-  document.querySelector("h1").innerHTML = "Draw!";
-}
+	elif player == "rock":
+		if computer == "scissors":
+			print("player wins!\n")
+			p+=1
+		else:
+			print("computer wins!\n")
+			comp+=1
+	elif player == "paper":
+		if computer == "rock":
+			print("player wins!\n")
+			p+=1
+		else:
+			print("computer wins!\n")
+			comp+=1
+	elif player == "scissors":
+		if computer == "paper":
+			print("player wins!\n")
+			p+=1
+		else:
+			print("computer wins!\n")
+			comp+=1
+	else:
+			print("Please enter a valid move!\n")
+if comp>p:
+	print("the computer wins")
+elif p>comp:
+	print("the player wins")
+else :
+	print("its a tie")
