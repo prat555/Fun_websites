@@ -1,1 +1,1 @@
-This is a simple game I created in my college freshman year in python language as a project for my python class.
+I've created two simple luck-based games. The first is a Rock-Paper-Scissors game developed in Python during my first year of college. The second is a dice game where the computer rolls a dice for two players, and the game determines the winner based on the rolls.
