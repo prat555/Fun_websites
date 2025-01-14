@@ -1,0 +1,1 @@
+This is a simple python game I made during my first year of college. It is a Rock-Paper-Scissors game where the user plays against the computer. The user provides their choice—'rock,' 'paper,' or 'scissors'—while the computer randomly selects one. The program then determines the winner, announcing whether the computer or the user has won.
