@@ -8,4 +8,4 @@ Fun date: [Link](https://hey-princess.netlify.app/)
 
 Drum Kit: [Link](https://drum-kit-812.netlify.app/)
 
-Rock Paper Scissor: [Link](https://colab.research.google.com/drive/1vc06umtUvIPquvLGND1oyNIiFieCuof8?usp=sharing)
+Rock Paper Scissor: [Link](https://colab.research.google.com/drive/1F1cWtEit3aLY5doNY947eQ-MiS20DEEl?usp=sharing)
